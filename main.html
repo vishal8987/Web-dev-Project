@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit Converter</title>
+</head>
+<body>
+	<h1>Unit Converter</h1>
+	<form>
+		<!-- Length converter -->
+		<h2>Length</h2>
+		<label for="fromLength">From:</label>
+		<select id="fromLength" name="fromLength">
+			<option value="meter">Meter</option>
+			<option value="kilometer">Kilometer</option>
+			<option value="centimeter">Centimeter</option>
+			<option value="millimeter">Millimeter</option>
+			<option value="mile">Mile</option>
+			<option value="yard">Yard</option>
+			<option value="foot">Foot</option>
+			<option value="inch">Inch</option>
+		</select>
+		<input type="number" id="lengthInput" placeholder="Enter value" required>
+		<br><br>
+		<label for="toLength">To:</label>
+		<select id="toLength" name="toLength">
+			<option value="meter">Meter</option>
+			<option value="kilometer">Kilometer</option>
+			<option value="centimeter">Centimeter</option>
+			<option value="millimeter">Millimeter</option>
+			<option value="mile">Mile</option>
+			<option value="yard">Yard</option>
+			<option value="foot">Foot</option>
+			<option value="inch">Inch</option>
+		</select>
+		<input type="number" id="lengthOutput" placeholder="Result" readonly>
+			<button type="button" onclick="convertLength()">Convert</button>
+		<hr>
+		
+		<!-- Weight converter -->
+		<h2>Weight</h2>
+		<label for="fromWeight">From:</label>
+		<select id="fromWeight" name="fromWeight">
+			<option value="kilogram">Kilogram</option>
+			<option value="gram">Gram</option>
+			<option value="milligram">Milligram</option>
+			<option value="pound">Pound</option>
+			<option value="ounce">Ounce</option>
+		</select>
+		<input type="number" id="weightInput" placeholder="Enter value" required>
+		<br><br>
+		<label for="toWeight">To:</label>
+		<select id="toWeight" name="toWeight">
+			<option value="kilogram">Kilogram</option>
+			<option value="gram">Gram</option>
+			<option value="milligram">Milligram</option>
+			<option value="pound">Pound</option>
+			<option value="ounce">Ounce</option>
+		</select>
+		<input type="number" id="weightOutput" placeholder="Result" readonly>
+		<button type="button" onclick="convertWeight()">Convert</button>
+		<hr>
+		
+		<!-- Temperature converter -->
+		<h2>Temperature</h2>
+		<label for="fromTemp">From:</label>
+		<select id="fromTemp" name="fromTemp">
+			<option value="celsius">Celsius</option>
+			<option value="fahrenheit">Fahrenheit</option>
+			<option value="kelvin">Kelvin</option>
+		</select>
+		<input type="number" id="tempInput" placeholder />
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+CSS --> stands for cascading style sheet.
+Describe how html elements are to be displayed on the screen.
+CSS covers multiple layout at once.
+
+types of related (page related )
+(a)->Internal CSS -->an internal style sheet holds CSS rules for the page in the head section in the html file.
+(b). External CSS --> An external stle sheet is a file containing only CSS syntax.
+(c). Inline CSS --> Inline CSS allows you to apply a unique style to one html element at a time.
+
+CSS Selectors:- CSS works?
+In CSS Selectors are patterns used to select the elements you want to style.
+-->
+Two main selectors:
+.class    (eg. .intro)
+                selects all the elememts with class ="intro"
+#id      (eg. #firstname)
+                selects the elememts with id ="firstname"   
+
+call the class & ID :-
+.class     Note :- class can be  called multiple times 
+--> <div class ="myclass"> my class is called here </div>
+<h3 class ="myclass"> myclass is called here </h3>
+
+#id       Note :-id is called only once, as it is unique.
+--> <div id ="myId"> myId is called here </div>

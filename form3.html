@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Form</title>
+</head>
+<body>
+
+<h2>Contact Form</h2>
+
+<form action="/submit_form" method="post">
+    <!-- Text Input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+
+    <!-- Select Dropdown -->
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <br>
+
+    <!-- Radio Buttons -->
+    <label>Preferred Contact Method:</label>
+    <input type="radio" id="contact_email" name="contact_method" value="email" required>
+    <label for="contact_email">Email</label>
+    <input type="radio" id="contact_phone" name="contact_method" value="phone" required>
+    <label for="contact_phone">Phone</label>
+    <br>
+
+    <!-- Checkboxes -->
+    <label>Interests:</label>
+    <input type="checkbox" id="interests_sports" name="interests[]" value="sports">
+    <label for="interests_sports">Sports</label>
+    <input type="checkbox" id="interests_music" name="interests[]" value="music">
+    <label for="interests_music">Music</label>
+    <input type="checkbox" id="interests_books" name="interests[]" value="books">
+    <label for="interests_books">Books</label>
+    <br>
+
+    <!-- Textarea -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

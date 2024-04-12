@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit Converter</title>
+</head>
+<body>
+	<h1>Unit Converter</h1>
+	<h2>Length</h2>
+	<form>
+		<label for="meters">Meters:</label>
+		<input type="number" id="meters" name="meters" placeholder="Enter length in meters" required>
+		<br><br>
+		<label for="feet">Feet:</label>
+		<input type="number" id="feet" name="feet" placeholder="Result in feet" readonly>
+		<button type="button" onclick="convertLength()">Convert</button>
+	</form>
+	<h2>Area</h2>
+	<form>
+		<label for="square_meters">Square meters:</label>
+		<input type="number" id="square_meters" name="square_meters" placeholder="Enter area in square meters" required>
+		<br><br>
+		<label for="square_feet">Square feet:</label>
+		<input type="number" id="square_feet" name="square_feet" placeholder="Result in square feet" readonly>
+		<button type="button" onclick="convertArea()">Convert</button>
+	</form>
+	<h2>Volume</h2>
+	<form>
+		<label for="cubic_meters">Cubic meters:</label>
+		<input type="number" id="cubic_meters" name="cubic_meters" placeholder="Enter volume in cubic meters" required>
+		<br><br>
+		<label for="cubic_feet">Cubic feet:</label>
+		<input type="number" id="cubic_feet" name="cubic_feet" placeholder="Result in cubic feet" readonly>
+		<button type="button" onclick="convertVolume()">Convert</button>
+	</form>
+	<h2>Weight</h2>
+	<form>
+		<label for="kilograms">Kilograms:</label>
+		<input type="number" id="kilograms" name="kilograms" placeholder="Enter weight in kilograms" required>
+		<br><br>
+		<label for="pounds">Pounds:</label>
+		<input type="number" id="pounds" name="pounds" placeholder="Result in pounds" readonly>
+		<button type="button" onclick="convertWeight()">Convert</button>
+	</form>
+	<h2>Temperature</h2>
+	<form>
+		<label for="celsius">Celsius:</label>
+		<input type="number" id="celsius" name="celsius" placeholder="Enter temperature in Celsius" required>
+		<br><br>
+		<label for="fahrenheit">Fahrenheit:</label>
+		<input type="number" id="fahrenheit" name="fahrenheit" placeholder="Result in Fahrenheit" readonly>
+		<button type="button" onclick="convertTemperature()">Convert</button>
+	</form>
+	<script>
+		function convertLength() {
+			var meters = parseFloat(document.getElementById("meters").value);
+			var feet = meters * 3.28084;
+			document.getElementById("feet").value = feet.toFixed(2);
+		}
+		function convertArea() {
+			var square_meters = parseFloat(document.getElementById("square_meters").value);
+			var square_feet = square_meters * 10.7639;
+			document.getElementById("square_feet").value = square_feet.toFixed(2);
+		}
+
+</script>
+</body>
+</html>
